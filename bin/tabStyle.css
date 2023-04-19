@@ -1,0 +1,59 @@
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+ 
+}
+.tab{
+ -fx-background-color: #dcbcff;
+ 
+ 
+}
+
+.tab-pane {
+
+-fx-tab-min-height:50px;
+-fx-tab-min-width:90px;
+ 
+-fx-background-color:#ECCBE0;
+}
+
+
+
+
+
+#about .tab-label{
+	-fx-text-fill: black;
+	
+
+
+}
+
+#about .tab-label{
+-fx-font-family: impact;
+
+}
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-font-family: Lucida Bright; 
+    -fx-rotate: 0; 
+ 
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+   
+ -fx-text-fill: black; 
+ 
+}
+
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #b22365;
+
+}
+
+

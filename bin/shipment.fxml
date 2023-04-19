@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="769.0" prefWidth="913.0" style="-fx-background-color: #fef0f4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shipmentController">
+   <children>
+      <TableView fx:id="shipmentTable" layoutX="132.0" layoutY="275.0" prefHeight="267.0" prefWidth="456.0" stylesheets="@table.css">
+        <columns>
+          <TableColumn fx:id="shipmentID" prefWidth="75.0" text="ShipmentID" />
+          <TableColumn fx:id="productID" prefWidth="75.0" text="ProductID" />
+            <TableColumn fx:id="Q" prefWidth="69.60003662109375" text="Quantity" />
+            <TableColumn fx:id="rdate" prefWidth="88.0" text="RequestDate" />
+            <TableColumn fx:id="adate" prefWidth="78.39996337890625" text="ArrivalDate" />
+            <TableColumn fx:id="status" prefWidth="66.4000244140625" text="status" />
+        </columns>
+      </TableView>
+      <Button fx:id="show" layoutX="634.0" layoutY="213.0" mnemonicParsing="false" onAction="#ShowAllOrders" prefHeight="51.0" prefWidth="100.0" stylesheets="@button.css" text="Show" />
+      <ButtonBar layoutX="419.0" layoutY="451.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button fx:id="add" layoutX="633.0" layoutY="274.0" mnemonicParsing="false" onAction="#InsertNew" prefHeight="51.0" prefWidth="100.0" stylesheets="@button.css" text="Add new" />
+      <Button fx:id="delete" layoutX="633.0" layoutY="399.0" mnemonicParsing="false" onAction="#deleteShipment" prefHeight="51.0" prefWidth="100.0" stylesheets="@button.css" text="Delete" />
+      <Button fx:id="update" layoutX="633.0" layoutY="337.0" mnemonicParsing="false" onAction="#updateShipment" prefHeight="51.0" prefWidth="100.0" stylesheets="@button.css" text="Update" />
+      <Button fx:id="search" layoutX="633.0" layoutY="460.0" mnemonicParsing="false" onAction="#searchShipment" prefHeight="51.0" prefWidth="100.0" stylesheets="@button.css" text="Search" />
+      <Label layoutX="114.0" layoutY="139.0" text="ShipmentID">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="118.0" layoutY="182.0" text="productID">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="233.0" text="requestDate">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="365.0" layoutY="141.0" text="Quantity">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="360.0" layoutY="235.0" text="arrivalDate">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="372.0" layoutY="185.0" text="status">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="msg" layoutX="596.0" layoutY="149.0" prefHeight="51.0" prefWidth="174.0" />
+      <TextField fx:id="sid" layoutX="198.0" layoutY="137.0" prefWidth="150.0" />
+      <TextField fx:id="pid" layoutX="198.0" layoutY="181.0" prefWidth="150.0" />
+      <TextField fx:id="qT" layoutX="438.0" layoutY="134.0" prefWidth="150.0" />
+      <DatePicker fx:id="aD" layoutX="438.0" layoutY="229.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="s" layoutX="438.0" layoutY="179.0" prefWidth="150.0" />
+      <DatePicker fx:id="rD" layoutX="198.0" layoutY="231.0" prefWidth="150.0" />
+      <Label layoutX="75.0" layoutY="49.0" text="Shipments:" textFill="#b22365">
+         <font>
+            <Font name="Angsana New" size="45.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

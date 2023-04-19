@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ECCBE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addCustController">
+   <children>
+      <Label layoutX="72.0" layoutY="39.0" prefHeight="18.0" prefWidth="236.0" text="Enter info for new Customer: ">
+         <font>
+            <Font name="Lucida Bright Demibold" size="14.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="84.0" text="Customer Name: ">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="nField" layoutX="190.0" layoutY="80.0" />
+      <TextField fx:id="IDField" layoutX="190.0" layoutY="124.0" />
+      <Label layoutX="72.0" layoutY="128.0" text="Customer Id:">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="AddField" layoutX="190.0" layoutY="170.0" />
+      <Label layoutX="84.0" layoutY="174.0" text="Address">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="P1Field" layoutX="190.0" layoutY="214.0" />
+      <Label layoutX="80.0" layoutY="218.0" text="Phone #1">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="P2Field" layoutX="190.0" layoutY="257.0" />
+      <Label layoutX="73.0" layoutY="261.0" text="Phone #2 (Optional)">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <Button layoutX="223.0" layoutY="333.0" mnemonicParsing="false" onAction="#addNewCust" stylesheets="@button.css" text="Add Customer" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="383.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
