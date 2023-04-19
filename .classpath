@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-14">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ali/Downloads/mysql-connector-java-5.1.47.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaFX">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/javafx-sdk-15.0.1/javafx-sdk-15.0.1/lib/javafx.fxml.jar" rootpath="." sourcepath="C:/Program Files/javafx-sdk-15.0.1/javafx-sdk-15.0.1/lib/src.zip">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/*"/>
+			<accessrule kind="discouraged" pattern="com/sun/*"/>
+			<accessrule kind="discouraged" pattern="netscape/javascript/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/java">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
