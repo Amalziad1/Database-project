@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestockController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="77.0" prefHeight="371.0" prefWidth="572.0" stylesheets="@table.css">
+        <columns>
+          <TableColumn fx:id="productNameCol" prefWidth="100.0" text="Product Name" />
+          <TableColumn fx:id="categoryCol" prefWidth="100.0" text="Category" />
+          <TableColumn fx:id="supplierNameCol" prefWidth="100.0" text="Supplier Name" />
+          <TableColumn fx:id="costCol" prefWidth="100.0" text="Cost" />
+          <TableColumn fx:id="priceCol" prefWidth="100.0" text="Price" />
+          <TableColumn fx:id="stockCol" prefWidth="100.0" text="Stock" />
+        </columns>
+      </TableView>
+      <Label layoutX="179.0" layoutY="30.0" text="Products to be Restocked:">
+         <font>
+            <Font name="Lucida Bright Regular" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

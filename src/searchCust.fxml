@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ECCBE0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="searchCustController">
+   <children>
+      <Label layoutX="50.0" layoutY="53.0" text="Search by name">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="nameField" layoutX="174.0" layoutY="49.0" />
+      <Label layoutX="50.0" layoutY="84.0" text="Search by ID">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="114.0" text="Search by address">
+         <font>
+            <Font name="Lucida Bright Regular" size="12.0" />
+         </font></Label>
+      <TextField fx:id="IDField" layoutX="174.0" layoutY="80.0" />
+      <TextField fx:id="addField" layoutX="174.0" layoutY="110.0" />
+      <Button fx:id="btn" layoutX="402.0" layoutY="80.0" mnemonicParsing="false" onAction="#search" stylesheets="@button.css" text="Search!" />
+      <TableView fx:id="table" layoutX="73.0" layoutY="193.0" prefHeight="94.0" prefWidth="484.0" stylesheets="@table.css">
+         <columns>
+            <TableColumn fx:id="ide" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="n" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="add" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="p1" prefWidth="233.0" text="Phone number(s)" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>

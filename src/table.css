@@ -1,0 +1,95 @@
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+ .table-view .column-header-background{
+    -fx-background-color: #b22365;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+ 
+
+.table-view .table-cell{
+    -fx-border-color: #dcbcff;;
+    -fx-padding: 2 0 2 10px;
+    -fx-font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    /* 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.table-row-cell hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color:  #dcbcff;;
+}
+/*.table-row-cell odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}*/
+
+
+.table-row-cell:selected {
+   -fx-background-color:  #b223664b; 
+}
+.table-row-cell hover {
+    -fx-background-color:  #fef0f4;
+    -fx-text-background-color:   black;
+}
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+ 
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+
+/*
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+*/
+
+.table-view .virtual-flow .scroll-bar .increment-button .increment-arrow,
+.table-view .virtual-flow .scroll-bar .decrement-button .decrement-arrow {
+    -fx-background-color:  #ECCBE0;
+
+}
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom,#b22365, #f1f6f7);
+}
+/* .table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right,#77a8b7, #f1f6f7);
+} */

@@ -1,0 +1,24 @@
+
+.button{
+  -fx-background-color:   #b22365;
+  -fx-background-radius: 10;
+}
+
+.button .text{
+  -fx-fill:  white;
+  -fx-font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+ 
+}
+
+ 
+/*
+.button:hover {
+  -fx-background-color: #278FAA;
+}
+
+.button:pressed {
+  -fx-background-color: #1A6477;
+}
+*/
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="346.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddProv_CompanyController">
+   <children>
+      <AnchorPane prefHeight="346.0" prefWidth="570.0">
+         <children>
+            <TextField fx:id="addName" layoutX="312.0" layoutY="50.0" />
+            <TextField fx:id="addAddress" layoutX="311.0" layoutY="106.0" />
+            <TextField fx:id="AddPhoneNumber" layoutX="312.0" layoutY="154.0" />
+            <TextField fx:id="addEmail" layoutX="311.0" layoutY="213.0" />
+            <Label alignment="CENTER" layoutX="79.0" layoutY="50.0" prefHeight="25.0" prefWidth="158.0" style="-fx-border-color: black;" text="supplier name" />
+            <Label alignment="CENTER" layoutX="76.0" layoutY="213.0" prefHeight="25.0" prefWidth="149.0" style="-fx-border-color: black;" text="email" />
+            <Label alignment="CENTER" layoutX="80.0" layoutY="154.0" prefHeight="25.0" prefWidth="142.0" style="-fx-border-color: black;" text="phone number" />
+            <Label alignment="CENTER" layoutX="80.0" layoutY="106.0" prefHeight="25.0" prefWidth="142.0" style="-fx-border-color: black;" text="address" />
+            <Label layoutX="101.0" layoutY="14.0" prefHeight="19.0" prefWidth="353.0" text="Add A New Suppling Company">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="add" layoutX="451.0" layoutY="282.0" mnemonicParsing="false" onAction="#addOnAction" text="ADD" />
+            <Button fx:id="btnCancel" layoutX="360.0" layoutY="282.0" mnemonicParsing="false" onAction="#CancelOnAction" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
